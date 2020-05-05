@@ -86,6 +86,12 @@ table td:last-child{
 }
 
 @media only screen and (min-width: 640px){
+	.dato{
+		position: relative;
+	}
+	.descripcion{
+		left: unset !important;
+	}
 	main>*{
 		padding: 0 50px;
 	}
@@ -217,6 +223,7 @@ article a{
 .tiempo{
 	width: 300px;
 	margin: auto;
+	position: relative;
 }
 section>.tiempo{
 	grid-column: 1/-1;
@@ -234,13 +241,13 @@ section>.tiempo{
 	text-align: center;
 	display: inline-block;
 	box-shadow: 0 5px 5px -2px;
-	position: relative;
 }
 .dato:hover{
 	box-shadow: 0 5px 20px -2px;
 }
 .fila{
 	display: flex;
+	position: relative;
 }
 
 .descripcion{
@@ -252,6 +259,7 @@ section>.tiempo{
 	position: absolute;
 	z-index: 10;
 	top: 75px;
+	left: 50px;
 	border-radius: 15px;
 	background-color: #fff;
 	box-shadow: 0 5px 20px -2px;
@@ -261,6 +269,7 @@ section>.tiempo{
 
 ul{
 	grid-column: 1/-1;
+	padding: 0 !important;
 }
 ul>li{
 	list-style-type: none;
