@@ -36,7 +36,7 @@ h1>span{
 	text-shadow: none;
 }
 h2{
-	margin-top: 2rem;
+	margin-top: 5rem;
 	font-style: italic;
 }
 h2,h3{
@@ -164,6 +164,7 @@ h2:nth-child(2n+8)+section{
 	grid-column-gap: 20px;
 	grid-row-gap: 3rem;
 }
+
 article{
 	display: block;
 	margin: auto;
@@ -256,4 +257,27 @@ section>.tiempo{
 	box-shadow: 0 5px 20px -2px;
 	margin-bottom: 2rem;
 	padding: 0 10px;
+}
+
+ul{
+	grid-column: 1/-1;
+}
+ul>li{
+	list-style-type: none;
+	position: relative;
+	margin-bottom: 1rem;
+}
+ul>li:before{
+	content: '\2713';
+	font-size: 1.8rem;
+}
+ul>li:after{
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: solid 1px #000;
 }
