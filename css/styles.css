@@ -212,3 +212,48 @@ article p{
 article a{
 	text-decoration: none !important;
 }
+
+.tiempo{
+	width: 300px;
+	margin: auto;
+}
+section>.tiempo{
+	grid-column: 1/-1;
+}
+.dato:first-child{
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.dato:last-child{
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.dato{
+	width: 100px;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 0 5px 5px -2px;
+	position: relative;
+}
+.dato:hover{
+	box-shadow: 0 5px 20px -2px;
+}
+.fila{
+	display: flex;
+}
+
+.descripcion{
+	display: none;
+}
+.dato:hover > .descripcion{
+	display: block;
+	width: 200px;
+	position: absolute;
+	z-index: 10;
+	top: 75px;
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 0 5px 20px -2px;
+	margin-bottom: 2rem;
+	padding: 0 10px;
+}
