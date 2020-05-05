@@ -9,12 +9,6 @@ body {
 p{
 	text-align: justify;
 }
-h1,h2,h3{
-	colo
-}
-h3>span{
-	float: right;
-}
 section>p{
 	text-indent: 40px;
 }
@@ -27,15 +21,15 @@ main{
 	background-color: #fff;
 }
 main>*{
-	padding: 0 50px;
+	padding: 0 2rem;
 }
 h1{
+	text-align: center;
 	margin-top: 4rem;
 	color: #1f497D;
 	text-shadow: 2px 2px 0px #000;
 }
 h1>span{
-	text-align: right;
 	display: block;
 	font-size: 1.6rem;
 	font-style: italic;
@@ -48,20 +42,12 @@ h2{
 h2,h3{
 	color: #365F91;
 }
-.row, .resumen, section{
+h3>span{
+	float: right;
+}
+.row, section{
 	display: grid;
-}
-.row.b65{
-	position: relative;
-	grid-template-columns: 65% 1fr;
-}
-.row.b20{
-	grid-template-columns: 20% 1fr;
-	grid-column-gap: 1rem;
-}
-
-.resumen{
-	grid-row-gap: 1rem;
+	grid-row-gap: 2rem;
 }
 
 img{
@@ -69,7 +55,17 @@ img{
 	height: auto;
 	margin: auto;
 }
+.row.info img{
+	border-radius: 10px;
+}
+
+main>.row:first-child{
+	position: relative;
+}
+
 table{
+	margin: auto;
+	height: 100%;
 	width: 300px;
 	border-spacing: 0px
 }
@@ -82,23 +78,70 @@ table td:first-child{
 table td:last-child{
 	padding-left: 1rem;
 }
-.dash{
-	position: absolute;
-    right: 10%;
-    bottom: 65px;
-    width: 150px;
-    border-top: solid 2px;
-    border-top-style: dashed;
+
+@media only screen and (min-width: 640px){
+	main>*{
+		padding: 0 50px;
+	}
+	table{
+		margin: unset;
+	}
+	.row.info{
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 1rem;
+	}
 }
-.dash::after{
-	content: '';
-    position: absolute;
-    right: calc(20% - 35px);
-    top: 10px;
-    width: 50px;
-    border-top: solid 1px;
-    transform: rotate(90deg);
+
+.info>p{
+	grid-column: 1/-1;
 }
+.resumen>p{
+	display: none;
+}
+@media only screen and (min-width: 768px){
+	.row.info{
+		grid-template-columns: 200px 1fr;
+	}
+	.info>p{
+		display: none;
+	}
+	.resumen>p{
+		display: block;
+	}
+	table{
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	h1{
+		text-align: left;
+	}
+	h1>span{
+		text-align: right;
+	}
+	.row.title{
+		grid-template-columns: 65% 1fr;
+	}
+	.dash{
+		position: absolute;
+	    right: 10%;
+	    bottom: 65px;
+	    width: 150px;
+	    border-top: solid 2px;
+	    border-top-style: dashed;
+	}
+	.dash::after{
+		content: '';
+	    position: absolute;
+	    right: calc(20% - 35px);
+	    top: 10px;
+	    width: 50px;
+	    border-top: solid 1px;
+	    transform: rotate(90deg);
+	}
+}
+
 .arrow{
 	font-size: 35px;
 	text-align: center;
