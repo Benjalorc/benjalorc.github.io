@@ -17,6 +17,7 @@ main{
 main>*{
 	padding: 0 2rem;
 }
+
 h1{
 	text-align: center;
 	margin-top: 4rem;
@@ -43,26 +44,23 @@ p>span{
 p{
 	text-align: justify;
 }
-section:not(.resumen)>p{
-	text-indent: 40px;
-}
-.row, section{
-	display: grid;
-}
-.row{
-	grid-row-gap: 2rem;
-}
-.resumen{
-	grid-template-areas: "foto" "resumen" "contacto";
-}
 
-main>.row:first-child{
+
+main>header{
 	position: relative;
 }
-section{
+main>header, section{
+	display: grid;
+	grid-row-gap: 2rem;
 	margin-bottom: 2rem;
 }
 
+.resumen{
+	grid-template-areas: "foto" "resumen" "contacto";
+}
+section:not(.resumen)>p{
+	text-indent: 40px;
+}
 img{
 	max-width: 100%;
 	height: auto;
@@ -92,15 +90,16 @@ img{
 	padding-left: 1rem;
 }
 
+.dash{
+	display: none;
+}
+
 @media only screen and (min-width: 640px){
-	.dato{
-		position: relative;
-	}
-	.descripcion{
-		left: unset !important;
-	}
 	main>*{
 		padding: 0 50px;
+	}
+	h2:nth-child(2n+8)+section{
+		grid-template-columns: 1fr 1fr !important;
 	}
 	.resumen>table{
 		height: 100%;
@@ -113,14 +112,17 @@ img{
 			". foto contacto ."
 			"resumen resumen resumen resumen";
 	}
-	h2:nth-child(2n+8)+section{
-		grid-template-columns: 1fr 1fr !important;
+	.dato{
+		position: relative;
+	}
+	.descripcion{
+		left: unset !important;
 	}
 }
 
 @media only screen and (min-width: 992px){
-	h2:nth-child(2n+8)+section{
-		grid-template-columns: repeat(3, 1fr) !important;
+	main>header{
+		grid-template-columns: 65% 1fr;
 	}
 	h1{
 		text-align: left;
@@ -128,10 +130,18 @@ img{
 	h1>span{
 		text-align: right;
 	}
-	.row.title{
-		grid-template-columns: 65% 1fr;
+	h2:nth-child(2n+8)+section{
+		grid-template-columns: repeat(3, 1fr) !important;
+	}
+	.resumen{
+		grid-template-columns: 200px 1fr;
+		grid-gap: 1rem;
+		grid-template-areas:
+			"foto resumen"
+			"foto contacto";
 	}
 	.dash{
+		display: block;
 		position: absolute;
 	    right: 10%;
 	    bottom: 65px;
@@ -147,13 +157,6 @@ img{
 	    width: 50px;
 	    border-top: solid 1px;
 	    transform: rotate(90deg);
-	}
-	.resumen{
-		grid-template-columns: 200px 1fr;
-		grid-gap: 1rem;
-		grid-template-areas:
-			"foto resumen"
-			"foto contacto";
 	}
 }
 
@@ -218,12 +221,17 @@ article a{
 }
 
 .tiempo{
+	grid-column: 1/-1;
+	display: flex;
 	width: 300px;
 	margin: auto;
 	position: relative;
 }
-section>.tiempo{
-	grid-column: 1/-1;
+.dato{
+	width: 100px;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 0 5px 5px -2px;
 }
 .dato:first-child{
 	border-top-left-radius: 15px;
@@ -233,18 +241,8 @@ section>.tiempo{
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 }
-.dato{
-	width: 100px;
-	text-align: center;
-	display: inline-block;
-	box-shadow: 0 5px 5px -2px;
-}
 .dato:hover{
 	box-shadow: 0 5px 20px -2px;
-}
-.fila{
-	display: flex;
-	position: relative;
 }
 
 .descripcion{
