@@ -206,7 +206,7 @@ article p{
 	color: #9696a0;
 }
 article:hover p{
-	color: #5a64c8;
+	color: #17a2b8;
 }
 
 article p>span{
@@ -218,6 +218,15 @@ article p{
 }
 article a{
 	text-decoration: none !important;
+}
+.completed{
+	font-weight: bold;
+}
+.completed>h3{
+	color: #000;
+}
+.completed>p{
+	color: #28a745 !important;
 }
 
 .tiempo{
