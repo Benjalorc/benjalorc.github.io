@@ -83,21 +83,25 @@ img:not(.flag){
 address{
 	grid-area: contacto;
 	display: grid;
-	grid-template-columns: 320px;
+	grid-template-columns: calc(100vw - 4rem);
 	grid-gap: 1rem;
 	margin: auto;
+}
+@media only screen and (min-width: 424px){
+	address{
+		grid-template-columns: 320px;
+	}
 }
 address>a{
 	display: grid;
 	grid-template-columns: 50px 1fr;
 	grid-column-gap: 1rem;
 	height: 5rem;
+	border-radius: 5px;
 	color: #007bff!important;
 	transition: 150ms;
-	border-radius: 5px;
 }
-address>a:nth-child(4n+2),
-address>a:nth-child(4n+3){
+address>a:nth-child(even){
 	background-color: #f4f7f7;
 }
 address>a:hover{
@@ -106,6 +110,7 @@ address>a:hover{
 address span:last-child{
 	align-self: center;
 	padding-right: 1rem;
+	word-break: break-all;
 }
 address img{
 	width: 35px !important;
@@ -167,6 +172,14 @@ address img{
 	address{
 		grid-template-columns: 1fr 1fr;
 		width: 100%;
+	}
+	address>a:nth-child(even){
+		background-color: unset;
+		font-weight: bold;
+	}
+	address>a:nth-child(4n+2),
+	address>a:nth-child(4n+3){
+		background-color: #f4f7f7;
 	}
 	.dash{
 		display: block;
