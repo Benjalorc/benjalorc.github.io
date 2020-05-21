@@ -44,6 +44,12 @@ p>span{
 p{
 	text-align: justify;
 }
+h5.pd{
+	color: #6c757d;
+}
+h5.pd>small{
+	color: #dc3545;
+}
 
 
 main>header{
@@ -51,6 +57,7 @@ main>header{
 }
 main>header, section{
 	display: grid;
+	grid-template-columns: minmax(1em, 100%);
 	grid-row-gap: 2rem;
 	margin-bottom: 2rem;
 }
@@ -61,7 +68,7 @@ main>header, section{
 section:not(.resumen)>p{
 	text-indent: 40px;
 }
-img{
+img:not(.flag){
 	max-width: 100%;
 	height: auto;
 	margin: auto;
@@ -88,6 +95,9 @@ img{
 }
 .resumen>table td:last-child{
 	padding-left: 1rem;
+}
+.resumen>table a{
+	color: #007bff!important;
 }
 
 .dash{
@@ -181,6 +191,9 @@ article{
 	height: 200px;
 	width: 220px;
 }
+article:hover{
+	box-shadow: 0 5px 20px -2px;
+}
 article>header{
 	height: 100%;
 }
@@ -191,9 +204,6 @@ article>header>a{
 article>header>a>p{
 	margin: 0;
 }
-article:hover{
-	box-shadow: 0 5px 20px -2px;
-}
 
 article h3{
 	color: #616161;
@@ -201,6 +211,7 @@ article h3{
 article:hover h3{
 	color: #000;
 }
+
 article p{
 	font-style: italic;
 	color: #9696a0;
@@ -212,8 +223,7 @@ article:hover p{
 article p>span{
 	font-style: normal;
 }
-article h3,
-article p{
+article *{
 	transition: all 150ms;
 }
 article a{
@@ -257,6 +267,9 @@ article a{
 .descripcion{
 	display: none;
 }
+.descripcion>*{
+	margin-bottom: 0;
+}
 .dato:hover > .descripcion{
 	display: block;
 	width: 200px;
@@ -293,4 +306,39 @@ ul>li:after{
 	width: 15px;
 	height: 15px;
 	border: solid 1px #000;
+}
+
+#languages{
+	position: fixed;
+	bottom: 2.5rem;
+	right: 2.5rem;
+	padding: 0;
+	outline: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: 50ms;
+}
+#languages:active{
+	bottom: 2rem;
+	right: 2rem;
+}
+
+.flag{
+	opacity: 0.5;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 10px;
+	box-shadow: 4px 4px 8px;
+	transition: 200ms;
+}
+#languages:active>.flag,
+#languages:hover>.flag{
+	opacity: 0.9;
+	box-shadow: 6px 6px 12px;
+}
+@media only screen and(min-width: 992px){
+	#languages:active>.flag{
+		box-shadow: 4px 4px 8px;
+	}
 }
