@@ -8,11 +8,11 @@ var textos = [{
 	selector: ".resumen>p",
 	contenido: "Front-end Developer with strong experience in HTML5 and CSS3. High expertise with Javascript and Angular Framework. New technologies enthusiast, loving hardware world and passionate musician."
 },{
-	selector: "table tr:nth-child(3) td",
+	selector: "address>a:nth-child(3)",
+	outer: true,
 	all: true,
 	contenido: [
-		`<a href="https://www.linkedin.com/in/benjaseg/?locale=en_US" target="_blank"><img src="./img/linkedin.png"></a>`,
-		`<a href="https://www.linkedin.com/in/benjaseg/?locale=en_US" target="_blank">linkedin.com/in/benjaseg/?locale=en_US</a>`
+		`<a href="https://www.linkedin.com/in/benjaseg/?locale=en_US" target="_blank"><img src="./img/linkedin.png"><span>linkedin.com/in/benjaseg/?locale=en_US</span></a>`
 	]
 },{
 	selector: "main>section:nth-child(n+4):nth-child(-n+7)",

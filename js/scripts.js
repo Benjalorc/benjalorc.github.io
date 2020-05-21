@@ -7,9 +7,17 @@ document.querySelector("#languages").addEventListener("click", (e)=>{
 			let elems = document.querySelectorAll(el.selector);
 			el.contenido.forEach((html, i)=>{
 
-				let mid = elems[i].innerHTML;
-				elems[i].innerHTML = html;
+				let mid;
+				if(el.outer){
+					mid = elems[i].outerHTML;
+					elems[i].outerHTML = html;
+				}
+				else{
+					mid = elems[i].innerHTML;
+					elems[i].innerHTML = html;
+				}
 				el.contenido[i] = mid;
+
 			});
 		}
 		else{

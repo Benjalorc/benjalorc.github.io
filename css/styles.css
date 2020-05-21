@@ -80,24 +80,41 @@ img:not(.flag){
 .resumen>p{
 	grid-area: resumen;
 }
-.resumen>table{
+address{
 	grid-area: contacto;
+	display: grid;
+	grid-template-columns: 320px;
+	grid-gap: 1rem;
 	margin: auto;
-	height: 300px;
-	width: 300px;
-	border-spacing: 0px
 }
-.resumen>table tr:nth-child(even){
+address>a{
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	grid-column-gap: 1rem;
+	height: 5rem;
+	color: #007bff!important;
+	transition: 150ms;
+	border-radius: 5px;
+}
+address>a:nth-child(4n+2),
+address>a:nth-child(4n+3){
 	background-color: #f4f7f7;
 }
-.resumen>table td:first-child{
-	width: 35px;
+address>a:hover{
+	background-color: #dfefef;
 }
-.resumen>table td:last-child{
-	padding-left: 1rem;
+address span:last-child{
+	align-self: center;
+	padding-right: 1rem;
 }
-.resumen>table a{
-	color: #007bff!important;
+address img{
+	width: 35px !important;
+}
+
+.arrow{
+	font-size: 35px;
+	text-align: center;
+	align-self: center;
 }
 
 .dash{
@@ -111,10 +128,7 @@ img:not(.flag){
 	h2:nth-child(2n+8)+section{
 		grid-template-columns: 1fr 1fr !important;
 	}
-	.resumen>table{
-		height: 100%;
-		margin: unset;
-	}
+
 	.resumen{
 		grid-template-columns: 1fr 200px 1fr 1fr;
 		grid-column-gap: 1rem;
@@ -150,6 +164,10 @@ img:not(.flag){
 			"foto resumen"
 			"foto contacto";
 	}
+	address{
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+	}
 	.dash{
 		display: block;
 		position: absolute;
@@ -168,11 +186,6 @@ img:not(.flag){
 	    border-top: solid 1px;
 	    transform: rotate(90deg);
 	}
-}
-
-.arrow{
-	font-size: 35px;
-	text-align: center;
 }
 
 h2:nth-child(2n+8)+section{
