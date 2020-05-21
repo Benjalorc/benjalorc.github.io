@@ -104,7 +104,7 @@ address>a{
 address>a:nth-child(even){
 	background-color: #f4f7f7;
 }
-address>a:hover{
+address>a:active{
 	background-color: #dfefef;
 }
 address span:last-child{
@@ -175,11 +175,14 @@ address img{
 	}
 	address>a:nth-child(even){
 		background-color: unset;
-		font-weight: bold;
 	}
 	address>a:nth-child(4n+2),
 	address>a:nth-child(4n+3){
 		background-color: #f4f7f7;
+	}
+
+	address>a:hover{
+		background-color: #dfefef;
 	}
 	.dash{
 		display: block;
