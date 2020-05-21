@@ -1,6 +1,6 @@
 var textos = [{
 	selector: "#languages",
-	contenido: `<img class="flag" src="./images/england-plain.jpg">`
+	contenido: `<img class="flag" src="./img/england-plain.jpeg">`
 },{
 	selector: "h1",
 	contenido: "Benjamín Saúl Escobar García <span>Front-end Web Development</span>",
