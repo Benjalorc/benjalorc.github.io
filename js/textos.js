@@ -6,7 +6,18 @@ var textos = [{
 	contenido: "Benjamín Saúl Escobar García <span>Front-end Web Development</span>",
 },{
 	selector: ".resumen>p",
-	contenido: "Front-end Developer with strong experience in HTML5 and CSS3. High expertise with Javascript and Angular Framework. New technologies enthusiast, loving hardware world and passionate musician."
+	contenido: "Front-end Developer with strong experience in HTML5, CSS3; High expertise with Javascript and Angular 2+ Framework. Experience with morphological image processing, and development of transtactional, medical, and geographic information systems; teamwork with Agile methodologies on interdisciplinary teams. New technologies enthusiast, loving hardware world and passionate musician."
+},{
+	selector: ".resumen h2",
+	contenido: "Availability",
+},{
+	selector: ".resumen .icons .detalle>h3",
+	all: true,
+	contenido: [
+		`Work starting availability`,
+		`In order and available to travel`,
+		`Schedule flexibility and adaptability`
+	]
 },{
 	selector: "address>a:nth-child(3)",
 	outer: true,
@@ -59,7 +70,7 @@ var textos = [{
 		`
 	]
 },{
-	selector: "h2",
+	selector: "main>h2",
 	all: true,
 	contenido: ["Experiences","Courses","Education","Knowledge / Skills / Profiency"]
 },{
