@@ -6,7 +6,7 @@ var textos = [{
 	contenido: "Benjamín Saúl Escobar García <span>Front-end Web Development</span>",
 },{
 	selector: ".resumen>p",
-	contenido: "Front-end Developer with strong experience in HTML5, CSS3; High expertise with Javascript and Angular 2+ Framework. Experience with morphological image processing, and development of transtactional, medical, and geographic information systems; teamwork with Agile methodologies on interdisciplinary teams. New technologies enthusiast, loving hardware world and passionate musician."
+	contenido: "Front-end Developer with strong experience in HTML5, CSS3, and SCSS preprocessor usage; High expertise with Javascript and Angular 2+ Framework with PWA development. Experience with morphological image processing, and development of transtactional, medical, and geographic information systems; teamwork with Agile methodologies on interdisciplinary teams. New technologies enthusiast, loving hardware world and passionate musician."
 },{
 	selector: ".resumen h2",
 	contenido: "Availability",
@@ -97,7 +97,7 @@ var textos = [{
 		`
 			<h4>Bachelor of Science: Computer Science*</h4>
 			<p>UPTOS: Clodosbaldo Russián</p>
-			<h5 class="pd">*Unfinished <small>(final year)</small></h5>
+			<h5 class="pd">*Unfinished <small>(final year / formalities)</small></h5>
 		`,
 	]
 },{
