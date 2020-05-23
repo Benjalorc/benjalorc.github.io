@@ -6,7 +6,7 @@ var textos = [{
 	contenido: "Benjamín Saúl Escobar García <span>Front-end Web Development</span>",
 },{
 	selector: ".resumen>p",
-	contenido: "Front-end Developer with strong experience in HTML5, CSS3, and SCSS preprocessor usage; High expertise with Javascript and Angular 2+ Framework with PWA development. Experience with morphological image processing, and development of transtactional, medical, and geographic information systems; teamwork with Agile methodologies on interdisciplinary teams. New technologies enthusiast, loving hardware world and passionate musician."
+	contenido: "Front-end Developer with strong experience in HTML5, CSS3, and SCSS preprocessor; High expertise with Javascript and Angular 2+ Framework with PWA’s. Experience with morphological image processing; development of transtactional, medical, and geographic information systems, using Git tools and REST API’s; teamwork with Agile methodologies on interdisciplinary teams. New technologies enthusiast, loving hardware world and passionate musician."
 },{
 	selector: ".resumen h2",
 	contenido: "Availability",
