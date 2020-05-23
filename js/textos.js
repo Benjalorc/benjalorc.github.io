@@ -85,19 +85,19 @@ var textos = [{
 	all: true,
 	contenido: [
 		`
-			<h4>High School in Computer Science</h4>
-			<p>Nuestra Señora del Valle</p>
-			<h5>2007 - 2012</h5>
+			<h4>Bachelor of Science: Computer Science*</h4>
+			<p>UPTOS (Polytechnic University)</p>
+			<h5 class="pd">*Unfinished <small>(final year / formalities)</small></h5>
 		`,
 		`
 			<h4>Associate's in Computer Science</h4>
-			<p>UPTOS: Clodosbaldo Russián</p>
+			<p>UPTOS (Polytechnic University)</p>
 			<h5>2013 - 2016</h5>
 		`,
 		`
-			<h4>Bachelor of Science: Computer Science*</h4>
-			<p>UPTOS: Clodosbaldo Russián</p>
-			<h5 class="pd">*Unfinished <small>(final year / formalities)</small></h5>
+			<h4>High School in Computer Science</h4>
+			<p>Nuestra Señora del Valle (High School)</p>
+			<h5>2007 - 2012</h5>
 		`,
 	]
 },{
