@@ -105,7 +105,7 @@ var textos = [{
 	contenido: 
 	`
 		<li><strong>Programming</strong>: High expertise in <strong>Javascript</strong> and frameworks or libraries based on this language.</li>
-		<li><strong>Web Layouts</strong>: Strong experience with <strong>HTML5</strong> and <strong>CSS3</strong> trends, controling <strong>CSS Grid</strong>, and handling <strong>Bootstrap 3 - 4</strong> framework, to increase usability and user experience.</li>
+		<li><strong>Web Layouts</strong>: Strong experience with <strong>HTML5</strong> and <strong>CSS3</strong> trends, controling <strong>CSS Grid</strong>, <strong>SCSS</strong> preprocessor usage, and handling <strong>Bootstrap 3 ~ 4</strong> framework, to enhance usability and user experience.</li>
 		<li><strong>Versioning</strong>: Git Version control management on main platforms as GitHub, BitBucket or Gitlab.</li>
 		<li>Adaptability to environment changes.</li>
 		<li>Proactivity, problems analysis and solving capabilities.</li>
