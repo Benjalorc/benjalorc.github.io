@@ -6,7 +6,7 @@ var textos = [{
 	contenido: "Benjamín Saúl Escobar García <span>Front-end Web Development</span>",
 },{
 	selector: ".resumen>p",
-	contenido: "Front-end Developer with strong experience in HTML5, CSS3, and SCSS preprocessor; High expertise with Javascript and Angular 2+ Framework with PWA’s. Experience with morphological image processing; development of transtactional, medical, and geographic information systems, using Git tools and REST API’s; teamwork with Agile methodologies on interdisciplinary teams. New technologies enthusiast, loving hardware world and passionate musician."
+	contenido: "Front-end Developer with strong experience in HTML5, CSS3, and SCSS preprocessor; high expertise with Javascript and Angular 2+ Framework with PWA’s. Experience with morphological image processing; development of transtactional, medical, and geographic information systems, using Git tools and REST API’s; teamwork with Agile methodologies on interdisciplinary teams. New technologies enthusiast, loving hardware world and passionate musician."
 },{
 	selector: ".resumen h2",
 	contenido: "Availability",
@@ -32,7 +32,7 @@ var textos = [{
 		`
 			<h3>Front-end Developer. Oralsys. <span>Apr 2018-Apr 2020</span></h3>
 			<p>
-				I developed components using <strong>Angular 5-8</strong>, handling data trough a <strong>REST API</strong>, and mantaining
+				I developed components using <strong>Angular 5-8</strong>, powered by <strong>Angular Material</strong> components and CSS framerowk <strong>Bootstrap 3</strong>, handling data trough a <strong>REST API</strong>, and mantaining
 				a git repository on <strong>GitLab</strong>. I created view for calendar management powered by <strong>Fullcalendar</strong> library.
 				I adapted pdf documents creation using <strong>PdfMake</strong> library. I managed to handle RX image visualization
 				and 3D Rendering using <strong>Web Workers</strong> and <strong>Ami.js</strong> library. I led freelancers which weer hired for
@@ -43,29 +43,29 @@ var textos = [{
 			<h3>Front-end Developer. CSUDO. <span>Sep 2017-Mar 2018</span></h3>
 			<p>
 				I developed <strong>Angular 4</strong> components for capturing and fetching earthquakes geographic data,
-				handling data trough a <strong>REST API</strong>, and mantaining a git repository on <strong>GitHub</strong>. I created an interactive
-				web map for data geo-referencing, with custom icons and dynamic data visualization, powered by
-				<strong>Leaflet</strong> library. I managed to include extra features for calculating distances and areas measurements. I
-				debugged front-end bugs due to system changes.
+				powered by CSS Framework <strong>Bootstrap 4</strong>, handling data trough a <strong>REST API</strong>,
+				and mantaining a git repository on <strong>GitHub</strong>. I created an interactive web map for data geo-referencing,
+				with custom icons and dynamic data visualization, powered by <strong>Leaflet</strong> library. I managed to
+				include extra features for calculating distances and areas measurements. I debugged front-end bugs due to system changes.
 			</p>
 		`,
 		`
 			<h3>Full-stack Developer. UPTOS. <span>Oct 2016-Sep 2017</span></h3>
 			<p>
-				I created a geographic information system using <strong>Angular 4</strong> and <strong>Bootstrap 3</strong> frameworks in
-				front, <strong>Node.js</strong> with <strong>Express</strong> on the web server, and <strong>Mongodb</strong> as database management system. I
-				designed <strong>UML</strong> artifacts for system documentation. I developed components for capturing popoulation
-				and students data from my <strong>REST API</strong>. I managed to include geo-referencing capabilities for data using
-				<strong>Leaflet</strong> library. I mantained a git repository on <strong>GitHub</strong> for versioning. Ad honorem project as partial
-				requirement in Computer Science career.
+				I created a geographic information system to support decision making using <strong>Angular 4</strong> and <strong>Bootstrap 3</strong> frameworks in
+				front, <strong>Node.js</strong> with <strong>Express</strong> on the web server, and <strong>Mongodb</strong> as database management system.
+				I handled user authentication throug <strong>JWT</strong>; designed <strong>UML</strong> artifacts for system documentation;
+				developed components for capturing popoulation and students data from my <strong>REST API</strong>; managed to include geo-referencing capabilities for data using
+				<strong>Leaflet</strong> library; and mantained a git repository on <strong>GitHub</strong> for versioning. <em>Ad honorem</em> project as partial requirement in Computer Science career.
 			</p>
 		`,
 		`
 			<h3>Javascript Developer. UPTOS. <span>Oct 2015-Sep 2016</span></h3>
 			<p>
-				I created algorythms for <strong>Javascript</strong> implementation, about image manipulation and
-				morphology, using <strong>Canvas</strong> API from <strong>HTML5</strong>. I developed filters for colour thereshold, grayscale,
-				gaussian, laplacian, and convolution filter. Ad honorem project as final requirement to get my Associate's in Computer Science degree.
+				I created algorythms for <strong>Javascript</strong> implementation, about image manipulation and  morphology,
+				using <strong>Canvas</strong> API from <strong>HTML5</strong>, to set the base of a images features extraction and sign language translation system.
+				I developed filters for colour thereshold, grayscale, gaussian, laplacian, and convolution filter; researched about human features on images;
+				implemented filters and algorythms to recognize and extract hands and faces features. <em>Ad honorem</em> project as final requirement to get my Associate's in Computer Science degree.
 			</p>
 		`
 	]
@@ -79,9 +79,10 @@ var textos = [{
 	contenido: [
 		`Completed <span>3h 20m</span>`,
 		`Completed <span>1h 0m</span>`,
+		`Completed <span>2h 51m</span>`,
 		`Completed <span>1h 53m</span>`,
 		`Completed <span>1h 2m</span>`,
-		`Completed <span>2h 51m</span>`
+		`Completed <span>1h 26m</span>`,
 	]
 },{
 	selector: ".tiempo .descripcion",
@@ -107,10 +108,10 @@ var textos = [{
 	selector: "ul",
 	contenido: 
 	`
-		<li><strong>Programming</strong>: High expertise in <strong>Javascript</strong> and frameworks or libraries based on this language.</li>
+		<li><strong>Programming</strong>: High expertise in <strong>Javascript</strong> and frameworks or libraries based on this language, with <strong>PWA</strong> development experience with <strong>Angular 2+</strong>.</li>
 		<li><strong>Web Layouts</strong>: Strong experience with <strong>HTML5</strong> and <strong>CSS3</strong> trends with <strong>Responsive Design</strong>, controling <strong>CSS Grid</strong>, <strong>SCSS</strong> preprocessor usage, and handling <strong>Bootstrap 3 ~ 4</strong> framework, to enhance usability and user experience.</li>
 		<li><strong>Versioning</strong>: Git Version control management on main platforms as GitHub, BitBucket or Gitlab.</li>
-		<li>Adaptability to environment changes.</li>
+		<li>Adaptability to environment changes. Learning in development time.</li>
 		<li>Proactivity, problems analysis and solving capabilities.</li>
 		<li>Teamwork skills. Mind-open to accept and offer support.</li>
 		<li>High conversational, reading and writing <strong>english</strong> level, both for technical and commercial english.</li>
