@@ -68,7 +68,7 @@ main>header, section{
 section:not(.resumen)>p{
 	text-indent: 40px;
 }
-img:not(.flag){
+*:not(.btn-float)>img{
 	max-width: 100%;
 	height: auto;
 	margin: auto;
@@ -380,23 +380,25 @@ ul>li:after{
 	border: solid 1px #000;
 }
 
-#languages{
+.btn-float{
 	position: fixed;
-	bottom: 2.5rem;
-	right: 2.5rem;
 	padding: 0;
 	outline: 0;
 	background: none;
 	border: none;
 	cursor: pointer;
 	transition: 50ms;
+	right: 2.5rem;
 }
-#languages:active{
-	bottom: 2rem;
-	right: 2rem;
-}
+.btn-float:active{ right: 2rem; }
 
-.flag{
+#languages{ bottom: 2.5rem; }
+#languages:active{ bottom: 2rem; }
+
+#portfolio{ bottom: 9rem; }
+#portfolio:active{ bottom: 8.5rem; }
+
+.btn-float>img{
 	opacity: 0.5;
 	width: 5rem;
 	height: 5rem;
@@ -404,13 +406,77 @@ ul>li:after{
 	box-shadow: 4px 4px 8px;
 	transition: 200ms;
 }
-#languages:active>.flag,
-#languages:hover>.flag{
+.btn-float:active>img,
+.btn-float:hover>img{
 	opacity: 0.9;
 	box-shadow: 6px 6px 12px;
 }
 @media only screen and(min-width: 992px){
-	#languages:active>.flag{
+	.btn-float:active>img{
 		box-shadow: 4px 4px 8px;
 	}
+}
+
+#backdrop{
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000000aa;
+	transition: top 0ms;
+}
+
+.modal:not(.open)+#backdrop{
+	top: -100vh;
+	transition-delay: 500ms;
+}
+
+.modal{
+	position: fixed;
+	z-index: 10;
+	top: -120vh;
+	left: 5vw;
+	width: 90vw;
+	height: 90vh;
+	border-radius: 10px;
+	background-color: #fff;
+	transition: 500ms;
+}
+.modal.open{ top: 5vh; }
+
+.modal-header{
+	display: flex;
+	justify-content: space-between;
+	height: 4rem;
+	max-width: 100%;
+	padding: 1rem;
+}
+.modal-header>h2{
+	padding-top: 1rem;
+	margin: 0;
+	font-style: normal;
+}
+.modal-header>button{
+	border: none;
+	background: none;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.modal-content{
+	display: grid;
+	height: calc(100% - 6rem);
+	overflow: auto;
+}
+@media only screen and (min-width: 768px){
+	.modal-content{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media only screen and (min-width: 1024px){
+	.modal-content{
+		grid-template-columns: repeat(3, 1fr);
+	}	
 }

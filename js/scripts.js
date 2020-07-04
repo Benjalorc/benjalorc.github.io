@@ -1,3 +1,16 @@
+function CloseModal(){
+	document.querySelector(".modal").classList.remove("open");
+	document.querySelector("body").style.overflow = 'auto';
+}
+function OpenModal(){
+	document.querySelector(".modal").classList.add("open");
+	document.querySelector("body").style.overflow = 'hidden';
+}
+
+document.querySelector("#portfolio").addEventListener("click", OpenModal);
+document.querySelector("#modal-close").addEventListener("click", CloseModal);
+document.querySelector("#backdrop").addEventListener("click", CloseModal);
+
 document.querySelector("#languages").addEventListener("click", (e)=>{
 
 	textos.forEach((el)=>{
