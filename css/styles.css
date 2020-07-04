@@ -451,7 +451,7 @@ ul>li:after{
 	justify-content: space-between;
 	height: 4rem;
 	max-width: 100%;
-	padding: 1rem;
+	padding: 1rem 1rem 0 1rem;
 }
 .modal-header>h2{
 	padding-top: 1rem;
@@ -467,16 +467,29 @@ ul>li:after{
 
 .modal-content{
 	display: grid;
+	grid-gap: 2rem;
+	padding: 1rem 1rem 0 1rem;
 	height: calc(100% - 6rem);
 	overflow: auto;
 }
-@media only screen and (min-width: 768px){
-	.modal-content{
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
 @media only screen and (min-width: 1024px){
 	.modal-content{
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}	
+}
+
+.proyect-preview{
+	align-self: center;
+	border-radius: 10px;
+	box-shadow: 0 0 10px;
+	transition: box-shadow 150ms;
+}
+.proyect-preview:hover{
+	box-shadow: 0 0 15px 2px;
+}
+.proyect-preview:last-child{
+	margin-bottom: 3rem;
+}
+.proyect-preview img{
+	border-radius: 10px;
 }
