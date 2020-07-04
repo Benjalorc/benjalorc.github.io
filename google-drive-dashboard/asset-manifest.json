@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "./static/css/main.fef66db2.chunk.css",
-    "main.js": "./static/js/main.9e96b6d2.chunk.js",
-    "main.js.map": "./static/js/main.9e96b6d2.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.09cf2b8a.js",
-    "runtime-main.js.map": "./static/js/runtime-main.09cf2b8a.js.map",
-    "static/css/2.6dec21e8.chunk.css": "./static/css/2.6dec21e8.chunk.css",
-    "static/js/2.096e1177.chunk.js": "./static/js/2.096e1177.chunk.js",
-    "static/js/2.096e1177.chunk.js.map": "./static/js/2.096e1177.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.d238a4b3ae60f7ca9fdb38c248c6f6c8.js": "./precache-manifest.d238a4b3ae60f7ca9fdb38c248c6f6c8.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/2.6dec21e8.chunk.css.map": "./static/css/2.6dec21e8.chunk.css.map",
-    "static/css/main.fef66db2.chunk.css.map": "./static/css/main.fef66db2.chunk.css.map",
-    "static/js/2.096e1177.chunk.js.LICENSE.txt": "./static/js/2.096e1177.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "./static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "/google-drive-dashboard/static/css/main.fef66db2.chunk.css",
+    "main.js": "/google-drive-dashboard/static/js/main.0ffb54ac.chunk.js",
+    "main.js.map": "/google-drive-dashboard/static/js/main.0ffb54ac.chunk.js.map",
+    "runtime-main.js": "/google-drive-dashboard/static/js/runtime-main.2d81d7f8.js",
+    "runtime-main.js.map": "/google-drive-dashboard/static/js/runtime-main.2d81d7f8.js.map",
+    "static/css/2.1c7a0fd8.chunk.css": "/google-drive-dashboard/static/css/2.1c7a0fd8.chunk.css",
+    "static/js/2.096e1177.chunk.js": "/google-drive-dashboard/static/js/2.096e1177.chunk.js",
+    "static/js/2.096e1177.chunk.js.map": "/google-drive-dashboard/static/js/2.096e1177.chunk.js.map",
+    "index.html": "/google-drive-dashboard/index.html",
+    "precache-manifest.c580d6ab12fe0cafefef3c80e19df041.js": "/google-drive-dashboard/precache-manifest.c580d6ab12fe0cafefef3c80e19df041.js",
+    "service-worker.js": "/google-drive-dashboard/service-worker.js",
+    "static/css/2.1c7a0fd8.chunk.css.map": "/google-drive-dashboard/static/css/2.1c7a0fd8.chunk.css.map",
+    "static/css/main.fef66db2.chunk.css.map": "/google-drive-dashboard/static/css/main.fef66db2.chunk.css.map",
+    "static/js/2.096e1177.chunk.js.LICENSE.txt": "/google-drive-dashboard/static/js/2.096e1177.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/google-drive-dashboard/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.09cf2b8a.js",
-    "static/css/2.6dec21e8.chunk.css",
+    "static/js/runtime-main.2d81d7f8.js",
+    "static/css/2.1c7a0fd8.chunk.css",
     "static/js/2.096e1177.chunk.js",
     "static/css/main.fef66db2.chunk.css",
-    "static/js/main.9e96b6d2.chunk.js"
+    "static/js/main.0ffb54ac.chunk.js"
   ]
 }
