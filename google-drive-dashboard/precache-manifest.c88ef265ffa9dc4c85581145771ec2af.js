@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce5103f3447f7f026c55fc5cbcda664d",
+    "revision": "3c8ba531babb903b51624dcf167d422f",
     "url": "./google-drive-dashboard/index.html"
   },
   {
