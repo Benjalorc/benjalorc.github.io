@@ -6,7 +6,7 @@ var textos = [{
 	contenido: "Benjamín Saúl Escobar García <span>Front-end Web Development</span>",
 },{
 	selector: ".resumen>p",
-	contenido: "Front-end Developer with strong experience in HTML5, CSS3, and SCSS preprocessor; High expertise with Javascript and Angular 2+ Framework with PWA’s. Experience with morphological image processing; development of transtactional, medical, and geographic information systems; using Git tools and REST API’s; and teamwork with Agile methodologies on interdisciplinary teams. Continuously learning. New technologies enthusiast, loving hardware world and passionate musician."
+	contenido: "Front-end Developer with strong experience in HTML5, CSS3, and SCSS preprocessor; High expertise with Javascript and Angular 2+ Framework with PWA’s. Experience with morphological image processing; development of transtactional, medical, and geographic information systems; using Git tools and REST API’s; and teamwork with Agile methodologies on interdisciplinary teams. Active self-taught learner. New technologies enthusiast, loving hardware world and passionate musician."
 },{
 	selector: ".resumen h2",
 	contenido: "Availability",
@@ -26,9 +26,18 @@ var textos = [{
 		`<a href="https://www.linkedin.com/in/benjaseg/?locale=en_US" target="_blank"><img src="./img/linkedin.png"><span>linkedin.com/in/benjaseg/?locale=en_US</span></a>`
 	]
 },{
-	selector: "main>section:nth-child(n+4):nth-child(-n+7)",
+	selector: "main>section:nth-child(n+4):nth-child(-n+8)",
 	all: true,
 	contenido: [
+		`
+			<h3>Front-end Developer. AsteratNet. <span>Jul 2020-Dec 2021</span></h3>
+			<p>
+				I created scalable functional components with <strong>React.js 16</strong>, powered by Server Side Rendering framework <strong>Next.js</strong>
+				and integrating <strong>Material-UI</strong> components in developed views. I built a <strong>Backend for Frontend</strong> to manage all 
+				<strong>REST API</strong> request prior to <strong>JWT</strong> authentication, and handled application state trough <strong>Redux</strong>.
+				I managed tasks progress trough <strong>Jira</strong> and mantained a git repository on <strong>GitHub</strong> creating branches for every task, defined during <strong>Scrum</strong> meetings.
+			</p>
+		`,
 		`
 			<h3>Front-end Developer. Oralsys. <span>Apr 2018-Apr 2020</span></h3>
 			<p>
@@ -108,11 +117,11 @@ var textos = [{
 	contenido: 
 	`
 		<li><strong>Programming</strong>: High expertise in <strong>Javascript</strong> and frameworks or libraries based on this language, with <strong>PWA</strong> development experience with <strong>Angular 2+</strong>.</li>
-		<li><strong>Web Layouts</strong>: Strong experience with <strong>HTML5</strong> and <strong>CSS3</strong> trends with <strong>Responsive Design</strong>, controling <strong>CSS Grid</strong>, <strong>SCSS</strong> preprocessor usage, and handling <strong>Bootstrap 3 ~ 4</strong> framework, to enhance usability and user experience.</li>
+		<li><strong>Web Layouts</strong>: Strong experience with <strong>HTML5</strong> and <strong>CSS3</strong> trends with <strong>Responsive Design</strong>, controling <strong>CSS Grid</strong>, <strong>SCSS</strong> preprocessor usage, and handling <strong>Bootstrap 3 ~ 4</strong> framework, efectively enhancing usability and improving <strong>UI/UX</strong>.</li>
 		<li><strong>Versioning</strong>: Git Version control management on main platforms as GitHub, BitBucket or Gitlab.</li>
+		<li><strong>C1 English:</strong> High conversational, reading and writing <strong>english</strong> level, both for technical and commercial english.</li>
 		<li>Adaptability to environment changes. Fast Learning in development time.</li>
 		<li>Proactivity, problems analysis and solving capabilities.</li>
 		<li>Teamwork skills. <strong>Agile</strong> practicioner Mind-open to accept and offer support.</li>
-		<li>High conversational, reading and writing <strong>english</strong> level, both for technical and commercial english.</li>
 	`
 }];

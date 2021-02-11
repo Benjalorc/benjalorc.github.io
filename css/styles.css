@@ -172,7 +172,7 @@ address img{
 	main>*{
 		padding: 0 50px;
 	}
-	h2:nth-child(2n+8)+section{
+	section.cursos{
 		grid-template-columns: 1fr 1fr !important;
 	}
 
@@ -202,7 +202,7 @@ address img{
 	h1>span{
 		text-align: right;
 	}
-	h2:nth-child(2n+8)+section{
+	section.cursos{
 		grid-template-columns: repeat(3, 1fr) !important;
 	}
 	.resumen{
@@ -247,7 +247,7 @@ address img{
 	}
 }
 
-h2:nth-child(2n+8)+section{
+section.cursos{
 	grid-template-columns: 1fr;
 	grid-column-gap: 20px;
 	grid-row-gap: 3rem;
