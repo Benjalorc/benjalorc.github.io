@@ -1,10 +1,20 @@
+const modal = document.querySelector(".modal");
+let wasOpen = false;
+
 function CloseModal(){
-	document.querySelector(".modal").classList.remove("open");
-	document.querySelector("body").style.overflow = 'auto';
+	modal.classList.remove("open");
+	document.body.style.overflow = 'auto';
 }
 function OpenModal(){
-	document.querySelector(".modal").classList.add("open");
-	document.querySelector("body").style.overflow = 'hidden';
+	modal.classList.add("open");
+	document.body.style.overflow = 'hidden';
+
+	if(!wasOpen){
+
+		let imgs = modal.querySelectorAll("img");
+		imgs.forEach(el => el.src = el.dataset.src);
+		wasOpen = true;
+	}
 }
 
 document.querySelector("#portfolio").addEventListener("click", OpenModal);
