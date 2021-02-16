@@ -440,6 +440,7 @@ ul>li:after{
 	left: 5vw;
 	width: 90vw;
 	height: 90vh;
+	padding: 1rem;
 	border-radius: 10px;
 	background-color: #fff;
 	transition: 500ms;
@@ -451,7 +452,6 @@ ul>li:after{
 	justify-content: space-between;
 	height: 4rem;
 	max-width: 100%;
-	padding: 1rem 1rem 0 1rem;
 }
 .modal-header>h2{
 	padding-top: 1rem;
@@ -466,30 +466,38 @@ ul>li:after{
 }
 
 .modal-content{
-	display: grid;
-	grid-gap: 2rem;
-	padding: 1rem 1rem 0 1rem;
-	height: calc(100% - 6rem);
+	height: calc(100% - 4rem);
 	overflow: auto;
 }
-@media only screen and (min-width: 1024px){
-	.modal-content{
-		grid-template-columns: repeat(2, 1fr);
-	}	
+
+.projects {
+	display: grid;
+	grid-gap: 2rem;
+	padding: 1rem;
 }
 
-.proyect-preview{
+.project-preview{
 	align-self: center;
 	border-radius: 10px;
 	box-shadow: 0 0 10px;
 	transition: box-shadow 150ms;
 }
-.proyect-preview:hover{
+.project-preview:hover{
 	box-shadow: 0 0 15px 2px;
 }
-.proyect-preview:last-child{
+.project-preview:last-child{
 	margin-bottom: 3rem;
 }
-.proyect-preview img{
+.project-preview img{
 	border-radius: 10px;
+}
+
+@media only screen and (min-width: 1024px){
+	.modal-content{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.project-preview.gdrive {
+		grid-row: 1/3;
+		grid-column: 2/3;
+	}
 }
