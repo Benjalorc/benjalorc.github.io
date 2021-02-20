@@ -24,6 +24,12 @@ var textos = [{
 	all: true,
 	contenido: [
 		`<a href="https://www.linkedin.com/in/benjaseg/?locale=en_US" target="_blank"><img src="./img/linkedin.png"><span>linkedin.com/in/benjaseg</span></a>`
+	],
+	selector: "address>a:nth-child(4)",
+	outer: true,
+	all: true,
+	contenido: [
+		`<a href="./docs/CV(en-US).pdf" download="Benjamin Escobar CV [en-US] (Angular-React-MEAN).pdf"> <span class="arrow">&#8595</span> <span>PDF</span></a>`
 	]
 },{
 	selector: "main>section:nth-child(n+4):nth-child(-n+8)",
