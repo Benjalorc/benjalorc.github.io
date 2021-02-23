@@ -124,4 +124,12 @@ var textos = [{
 },{
 	selector: ".modal.portfolio h2",
 	contenido: `Portfolio`
+},{
+	selector: ".project-preview>h3",
+	all: true,
+	contenido: [
+		`Full CRUD demo featuring Angular + Angular Material`,
+		`Dashboard demo featuring Oauth-based Google Sign-in`,
+		`GIS for seismicity data capture and displaying (only front)`
+	]
 }];
