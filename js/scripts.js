@@ -1,3 +1,54 @@
+const logos = {
+	html5: {
+		src: "./img/html5-logo.svg",
+		alt: "HTML5"
+	},
+	css3: {
+		src: "./img/css3-logo.svg",
+		alt: "CSS3"
+	},
+	bs: {
+		src: "./img/bs-logo.svg",
+		alt: "Bootstrap"
+	},
+	fa: {
+		src: "./img/fa-logo.svg",
+		alt: "Font Awesome"
+	},
+	js: {
+		src: "./img/js-logo.svg",
+		alt: "JavaScript"
+	},
+	chartjs: {
+		src: "./img/chartjs-logo.svg",
+		alt: "Chart.js"
+	},
+	leaflet: {
+		src: "./img/leaflet-logo.svg",
+		alt: "leaflet"
+	},
+	ts: {
+		src: "./img/ts-logo.svg",
+		alt: "TypeScript"
+	},
+	ng: {
+		src: "./img/ng-logo.svg",
+		alt: "Angular"
+	},
+	ngMat: {
+		src: "./img/ng-mat-logo.svg",
+		alt: "Angular Material"
+	},
+	rxjs: {
+		src: "./img/rxjs-logo.svg",
+		alt: "RxJs"
+	},
+	strapi: {
+		src: "./img/strapi-logo.svg",
+		alt: "Strapi"
+	}
+}
+
 const modal = document.querySelector(".modal");
 let wasOpen = false;
 
@@ -13,6 +64,18 @@ function OpenModal(){
 
 		let imgs = modal.querySelectorAll("img");
 		imgs.forEach(el => el.src = el.dataset.src);
+
+		const stacks = [
+			["html5","ng","ts","rxjs","css3","ngMat","strapi"],
+			["html5","ng","ts","rxjs","chartjs","css3","bs","fa"],
+			["html5","ng","ts","rxjs","leaflet","css3","bs","fa"]
+		];
+		document.querySelectorAll(".stack").forEach((el, i)=>{
+			for(const tech of stacks[i]){
+				el.innerHTML += `<img src="${logos[tech].src}" alt="${logos[tech].alt}">`;
+			}
+		});
+
 		wasOpen = true;
 	}
 }
