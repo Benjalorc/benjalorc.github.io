@@ -35,6 +35,10 @@ const logos = {
 		src: "./img/ng-logo.svg",
 		alt: "Angular"
 	},
+	react: {
+		src: "./img/react-logo.svg",
+		alt: "React"
+	},
 	ngMat: {
 		src: "./img/ng-mat-logo.svg",
 		alt: "Angular Material"
@@ -42,6 +46,10 @@ const logos = {
 	rxjs: {
 		src: "./img/rxjs-logo.svg",
 		alt: "RxJs"
+	},
+	redux: {
+		src: "./img/redux-logo.svg",
+		alt: "Redux"
 	},
 	strapi: {
 		src: "./img/strapi-logo.svg",
@@ -67,7 +75,7 @@ function OpenModal(){
 
 		const stacks = [
 			["html5","ng","ts","rxjs","css3","ngMat","strapi"],
-			["html5","ng","ts","rxjs","chartjs","css3","bs","fa"],
+			["html5","react","ts","redux","chartjs","css3","bs","fa"],
 			["html5","ng","ts","rxjs","leaflet","css3","bs","fa"]
 		];
 		document.querySelectorAll(".stack").forEach((el, i)=>{
