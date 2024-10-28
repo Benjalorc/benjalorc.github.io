@@ -84,12 +84,12 @@ document.querySelector("#portfolio").addEventListener("click", OpenModal);
 document.querySelector("#modal-close").addEventListener("click", CloseModal);
 document.querySelector("#backdrop").addEventListener("click", CloseModal);
 
-const pdf = document.querySelector("#getPdf");
+// const pdf = document.querySelector("#getPdf");
 
 document.querySelector("#languages").addEventListener("click", (e)=>{
 
-	pdf.href = /US/.test(pdf.href) ? "./docs/CV(es-ES).pdf" : "./docs/CV(en-US).pdf";
-	pdf.download = /US/.test(pdf.download) ? "CV Benjamin Escobar (Angular-React-MEAN).pdf" : "Benjamin Escobar CV [en-US] (Angular-React-MEAN).pdf";
+	// pdf.href = /US/.test(pdf.href) ? "./docs/CV(es-ES).pdf" : "./docs/CV(en-US).pdf";
+	// pdf.download = /US/.test(pdf.download) ? "CV Benjamin Escobar (Angular-React-MEAN).pdf" : "Benjamin Escobar CV [en-US] (Angular-React-MEAN).pdf";
 
 	textos.forEach((el)=>{
 

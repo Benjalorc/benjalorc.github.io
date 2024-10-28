@@ -65,8 +65,14 @@ main>header, section{
 .resumen{
 	grid-template-areas: "foto" "disp" "resumen" "contacto";
 }
+main>section:nth-child(n+4):nth-child(-n+9){
+	grid-row-gap: 0;
+}
 section:not(.resumen)>p{
 	text-indent: 40px;
+}
+section:not(.resumen)>h3{
+	margin-bottom: 3em;
 }
 *:not(.btn-float)>img{
 	max-width: 100%;

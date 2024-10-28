@@ -19,13 +19,25 @@ var textos = [{
 		`Schedule flexibility and adaptability`
 	]
 },{
-	selector: "#lnkd",
-	outer: true,
-	contenido: `<a id="lnkd" href="https://www.linkedin.com/in/benjaseg/?locale=en_US" target="_blank"><img src="./img/linkedin.png"><span>linkedin.com/in/benjaseg</span></a>`
-},{
-	selector: "main>section:nth-child(n+4):nth-child(-n+8)",
+	selector: "main>section:nth-child(n+4):nth-child(-n+9)",
 	all: true,
 	contenido: [
+		`
+			<h3>Front-end Developer. Applaudo. <span>Apr 2021-Currently</span></h3>
+			<p>
+				I've built high performant solutions with <strong>React.js</strong> and <strong>Next.js</strong> framework for server side rendering,
+				in a wide variety of projects for US-based clients as well as clients based in El Salvador, adhering to best practices and coding standards.
+			</p>
+			<p>
+				Crafted next-generation, pixel-perfect <strong>Tailwind</strong> powered, user interfaces from <strong>Figma</strong> designs,
+				thereby ensuring exceptional user experiences. Tested code-quality against self-written <strong>Jest</strong> automated tests, and documented
+				components by creating <strong>Storybook</strong> stories as necessary.
+			</p>
+			<p>
+				Worked in collaborative environments with multidisciplinary teams, implementing agile methodologies such as <strong>Scrum</strong> and <strong>Kanban</strong>.
+				Maintained strong performance and high standards of work, thus getting the most recent client to keep loyal and extend the contract twice.
+			</p>
+		`,
 		`
 			<h3>Front-end Developer. AsteratNet. <span>Jul 2020-Dec 2021</span></h3>
 			<p>
