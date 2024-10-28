@@ -39,6 +39,10 @@ const logos = {
 		src: "./img/react-logo.svg",
 		alt: "React"
 	},
+	mui: {
+		src: "./img/mui-logo.svg",
+		alt: "Material UI"
+	},
 	ngMat: {
 		src: "./img/ng-mat-logo.svg",
 		alt: "Angular Material"
@@ -54,6 +58,10 @@ const logos = {
 	strapi: {
 		src: "./img/strapi-logo.svg",
 		alt: "Strapi"
+	},
+	idb: {
+		src: "./img/idb-logo.png",
+		alt: "IndexedDB"
 	}
 }
 
@@ -74,8 +82,9 @@ function OpenModal(){
 		imgs.forEach(el => el.src = el.dataset.src);
 
 		const stacks = [
+			["html5","react","ts","redux","css3","mui","idb"],
 			["html5","ng","ts","rxjs","css3","ngMat","strapi"],
-			["html5","react","ts","redux","chartjs","css3","bs","fa"],
+			["html5","react","js","redux","chartjs","css3","bs","fa"],
 			["html5","ng","ts","rxjs","leaflet","css3","bs","fa"]
 		];
 		document.querySelectorAll(".stack").forEach((el, i)=>{
