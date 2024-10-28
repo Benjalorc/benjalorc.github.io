@@ -6,7 +6,7 @@ var textos = [{
 	contenido: "Benjamín Saúl Escobar García <span>Front-end Web Development</span>",
 },{
 	selector: ".resumen>p",
-	contenido: "Front-end Developer with strong experience in HTML5, CSS3, and SCSS preprocessor; High expertise with JavaScript and Angular 2+ Framework with PWA’s. Experience with morphological image processing; development of transactional, medical, and geographic information systems; using Git tools and REST API’s; and teamwork with Agile methodologies on interdisciplinary teams. Active self-taught learner. New technologies enthusiast, loving hardware world and passionate musician."
+	contenido: "Front-end Developer with strong experience in HTML5, CSS3, and SCSS preprocessor; High expertise with JavaScript and React.js with Next.js framework. Experience with morphological image processing; development of transactional, medical, and geographic information systems; using Git tools and REST API’s; and teamwork with Agile methodologies on interdisciplinary teams. Active self-taught learner. New technologies enthusiast, loving hardware world and passionate musician."
 },{
 	selector: ".resumen h2",
 	contenido: "Availability",
@@ -125,7 +125,7 @@ var textos = [{
 	selector: "ul",
 	contenido: 
 	`
-		<li><strong>Programming</strong>: High expertise in <strong>JavaScript</strong> and frameworks or libraries based on this language, with <strong>PWA</strong> development experience with <strong>Angular 2+</strong>.</li>
+		<li><strong>Programming</strong>: High expertise in <strong>JavaScript</strong> and frameworks or libraries based on this language, with <strong>PWA</strong> development experience on <strong>React.js</strong> and <strong>Angular 2+</strong>.</li>
 		<li><strong>Web Layouts</strong>: Strong experience with <strong>HTML5</strong> and <strong>CSS3</strong> trends with <strong>Responsive Design</strong>, controling <strong>CSS Grid</strong>, <strong>SCSS</strong> preprocessor usage, and handling <strong>Bootstrap 3 ~ 4</strong> framework, efectively enhancing usability and improving <strong>UI/UX</strong>.</li>
 		<li><strong>Versioning</strong>: Git Version control management on main platforms as GitHub, BitBucket or Gitlab.</li>
 		<li><strong>C1 English:</strong> High conversational, reading and writing <strong>english</strong> level, both for technical and commercial english.</li>
