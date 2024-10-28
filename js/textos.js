@@ -126,7 +126,7 @@ var textos = [{
 	contenido: 
 	`
 		<li><strong>Programming</strong>: High expertise in <strong>JavaScript</strong> and frameworks or libraries based on this language, with <strong>PWA</strong> development experience on <strong>React.js</strong> and <strong>Angular 2+</strong>.</li>
-		<li><strong>Web Layouts</strong>: Strong experience with <strong>HTML5</strong> and <strong>CSS3</strong> trends with <strong>Responsive Design</strong>, controling <strong>CSS Grid</strong>, <strong>SCSS</strong> preprocessor usage, and handling <strong>Bootstrap 3 ~ 4</strong> framework, efectively enhancing usability and improving <strong>UI/UX</strong>.</li>
+		<li><strong>Web Layouts</strong>: Strong experience with <strong>HTML5</strong> and <strong>CSS3</strong> trends with <strong>Responsive Design</strong>, controling <strong>CSS Grid</strong>, <strong>SCSS</strong> preprocessor usage, and handling <strong>Bootstrap 3 ~ 4</strong> and <strong>Tailwind CSS</strong> frameworks, efectively enhancing usability and improving <strong>UI/UX</strong>.</li>
 		<li><strong>Versioning</strong>: Git Version control management on main platforms as GitHub, BitBucket or Gitlab.</li>
 		<li><strong>C1 English:</strong> High conversational, reading and writing <strong>english</strong> level, both for technical and commercial english.</li>
 		<li>Adaptability to environment changes. Fast Learning in development time.</li>
